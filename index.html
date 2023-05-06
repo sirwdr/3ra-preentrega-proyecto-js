@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="mb-3">Lista de productos</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombreProducto">Nombre del producto:</label>
+                <input type="text" class="form-control" id="nombreProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="precioProducto">Precio del producto:</label>
+                <input type="number" class="form-control" id="precioProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="stockProducto">Stock del producto:</label>
+                <input type="number" class="form-control" id="stockProducto" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar producto</button>
+        </form>
+        <div class="form-group mt-5">
+            <label for="filtroNombre">Filtrar por nombre:</label>
+            <input type="text" class="form-control" id="filtroNombre">
+        </div>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="listaProductos">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
